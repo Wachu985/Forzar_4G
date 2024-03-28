@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:forzar_4g/src/core/theme/theme_data.dart';
+import 'package:forzar_4g/src/presentation/screens/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: "Forzar 4G",
+      debugShowCheckedModeBanner: false,
+      theme: const AppTheme().getTheme(),
+      home: const HomeScreen(),
     );
   }
 }
