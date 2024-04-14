@@ -1,7 +1,7 @@
 name: forzar_4g
-description: "A new Flutter project."
+description: "Simple application to force 4G"
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -12,7 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
+  flutter_native_splash: ^2.4.0
+  go_router: ^13.2.4
   shared_preferences: ^2.2.2
+  url_launcher: ^6.2.6
 
 dev_dependencies:
   flutter_lints: ^3.0.0
@@ -21,3 +24,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
